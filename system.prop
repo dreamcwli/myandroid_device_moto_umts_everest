@@ -1,0 +1,31 @@
+# RIL and telephony related settings
+rild.libpath=/system/lib/libmoto_ril.so
+persist.ril.mux.ttydevice=/dev/ttyUSB2
+persist.ril.mux.noofchannels=8
+persist.ril.modem.mode=2
+persist.ril.modem.ttydevice=/dev/ttyUSB4
+persist.ril.features=0x34
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=0
+persist.ril.tcmd.ttydevice=/dev/ttyUSB3
+
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number
+ro.opengles.version = 131072
+
+# Indicate carrier OTA SP number schema
+# refer to frameworks/base/telephony/java/com/android/
+# internal/telephony/cdma/CDMAPhone.java for the schema:
+#ro.cdma.otaspnumschema=SELC,1,80,99
+
+# UA profile
+ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf
+
+# BP flex version
+ro.build.bp.config.version=UCAEVEUB1B8EU03F.0R
+
+# Google use the system property to control if allow device to be unlock without SIM
+keyguard.no_require_sim=true
+
+drm.service.enabled=true
+
