@@ -1,4 +1,5 @@
 $(call inherit-product, device/moto/umts_everest/full_umts_everest.mk)
+$(call inherit-product, vendor/my/common.mk)
 
 PRODUCT_NAME := my_umts_everest
 PRODUCT_DEVICE := umts_everest
